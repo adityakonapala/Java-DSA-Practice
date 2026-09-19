@@ -6,6 +6,7 @@
  * 
  * timecomplexity is o(n) and space complexity is o(1)
  */
+
 public class BuyandSellStocks {
     public static void buyandsell(int arr[]){
         int minprice=arr[0];
@@ -18,9 +19,7 @@ public class BuyandSellStocks {
             }
             int profit = arr[i]-minprice;
 
-            if(profit>maxprofit){
-                maxprofit=profit;
-            }
+            maxprofit=Math.max(maxprofit,profit);
         }
         System.out.println("The maximum profit that can be achieved is: " + maxprofit); 
     }

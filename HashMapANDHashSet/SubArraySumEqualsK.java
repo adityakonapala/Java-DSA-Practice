@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class SubArraySumEqualsK {
+public class SubArraySumEqualsK {   // no of sub arrays whose sum is equal to k 
     public static void main(String[] args) {
         
         int arr[]={1,2,3,2};

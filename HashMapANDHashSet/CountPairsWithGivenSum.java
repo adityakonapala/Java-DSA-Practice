@@ -3,8 +3,8 @@ import java.util.HashMap;
 public class CountPairsWithGivenSum {
     public static void main(String[] args) {
 
-        int[] arr = { 1, 5, 7, 5 };
-        int target = 6;
+        int[] arr = { 1,2,3,4 };
+        int target = 5;
 
         HashMap<Integer,Integer> map = new HashMap<>();
 
