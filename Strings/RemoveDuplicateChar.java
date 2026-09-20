@@ -14,7 +14,9 @@ public class RemoveDuplicateChar {
             set.add(ch);
         }
 
-        System.out.println(set);
+        for(char ch :set){
+            System.out.print(ch+" ");
+        }
 
     
 

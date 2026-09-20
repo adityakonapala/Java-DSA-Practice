@@ -13,6 +13,7 @@ public class AnagramCheck {
 
         if(str1.length()!= str2.length()){
           System.out.println("not anagrams");
+          return;
         }
 
         HashMap<Character,Integer> map = new HashMap<>();
@@ -21,9 +22,11 @@ public class AnagramCheck {
           map.put(ch,map.getOrDefault(ch,0)+1);
         }
 
+        boolean isanagram=true;
+
         for(char ch :str2.toCharArray()){
             if(!map.containsKey(ch)){
-                System.out.println("Not an Anagram ");
+               isanagram=false;
                 break;
             }
 
@@ -34,10 +37,12 @@ public class AnagramCheck {
            }
         }
 
-        if(map.isEmpty()){
+        if(map.isEmpty() && isanagram){
             System.out.println("Anagrams");
         }else{
             System.out.println("not an anagram");
+           
+            
         }
         sc.close();
     }
